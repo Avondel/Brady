@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Test 6</title>
+	<link rel="stylesheet" type = "text/css" href = "style8.css">
+
+
+</head>
+<body>
+<section class="drawer">
+  <header>
+    <span class="header-text">
+      Note header
+    </span>
+    <button id="minimize"> minimize </button>
+  </header>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec erat vehicula, malesuada augue eget, ultricies arcu. Donec tincidunt malesuada ex, sed semper lectus sodales ultricies. Etiam sagittis justo non ipsum consectetur, eget pulvinar lectus efficitur. Nunc eu urna hendrerit, tincidunt massa eu, efficitur turpis. Curabitur vulputate viverra nisl, vitae pellentesque erat faucibus eget. Nullam suscipit facilisis dui eget imperdiet. Curabitur ultrices luctus purus, sed tincidunt nisi mollis ut. Sed ullamcorper vehicula ligula, eget efficitur nunc. Cras sodales porta rhoncus. Fusce ornare porttitor nibh vitae pulvinar. Aenean facilisis arcu vitae dignissim volutpat. Aliquam at magna vitae augue tempus ornare.</p>
+  </div>
+</section>
+</body>
+	<script src = "js8.js"></script>
+</html>

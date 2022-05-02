@@ -1,0 +1,96 @@
+:root {
+  --animation-duration: 1s;
+
+}
+
+/* Animations */
+@keyframes fillColor {
+  to {
+    background-color: #7afcff;
+  }
+}
+
+@keyframes unfillColor {
+  to {
+    background-color: #feff9c;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+@keyframes hold {
+	
+}
+
+@keyframes moveLeft{
+	to {left:200px;}
+}
+
+@keyframes moveDown{
+	to {top:200px;}
+}
+
+@keyframes moveDiag{
+	0% {left:0px; top:0px;}
+	100% {left:200px; top: 200px;}
+}
+
+@keyframes moveCircle{
+	
+}
+
+@keyframes moveSpiral{
+	0% {transform: rotate(0deg) translateX(0px) rotate(0deg);}
+	100% {transform: rotate(360deg) translateX(150px) rotate(-360deg);}
+}
+
+@keyframes grow{
+	100% {transform: scale(1.5);}
+}
+
+
+.fill {
+  animation: fillColor var(--animation-duration) forwards ease-out;
+}
+
+.fadeOut {
+  animation: fadeOut var(--animation-duration) forwards ease-out;
+}
+
+.fadeIn{
+	animation: fadeIn var(--animation-duration) forwards ease-out;
+}
+
+.hold{
+	animation: hold var(--animation-duration) forwards ease-out;
+}
+
+.moveLeft{
+	animation: moveLeft var(--animation-duration) forwards ease-out;
+}
+
+.moveDown{
+	animation: moveDown var(--animation-duration) forwards ease-out;
+}
+
+.moveDiag{
+	animation: moveDiag var(--animation-duration) forwards ease-out;
+}
+
+.moveSpiral{
+	animation: moveSpiral var(--animation-duration) forwards linear;
+}
+
+.grow{
+	animation: grow var(--animation-duration) forwards ease-out;
+}
+

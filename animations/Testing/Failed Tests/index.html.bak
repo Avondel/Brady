@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <style>
+        div {
+            position: relative;
+            animation: geeks 5s infinite;
+            animation-play-state: paused;
+        }
+          
+        div:hover {
+            animation-play-state: running;
+        }
+          
+        @keyframes geeks {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+  
+<body>
+    <p>
+        Hover over the GeeksforGeeks 
+        to run the animation.
+    </p>
+  
+    <div>GeeksforGeeks</div>
+</body>
+  
+</html>

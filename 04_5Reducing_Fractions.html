@@ -2,13 +2,14 @@
 <html>
 <head>
 <!-- 
-			Math and Chemistry Business
+			Reducing Fractions Page
 			Nov 5, 2021
 			Index Html		
 		-->
 	<link rel='stylesheet' type='text/css' href='css\MainMain.css'>
-   <link rel='stylesheet' type='text/css' href='css\MathMain.css'> 
-	<script src="java\MATJava.js"></script>
+    <link rel='stylesheet' type='text/css' href='css\MathMain.css'> 
+	<link rel='stylesheet' type='text/css' href='css\Animations.css'>
+
 	<title>04_5Reducing Fractions</title>
 </head>
 
@@ -44,8 +45,15 @@
 
 
 <div id="Show" class="tabcontent">
-  <h3>Show Me How</h3>
-  <p>To Be Created: Animation of how this works....</p>
+	<h3>Show Me How..."</h3>
+	<div class="animation" id="animation1">
+		<button id="play" onclick = "start()"> Start </button>
+		<button id="pause" onclick = "pause(event)"> Pause </button>
+		<button id="restart" onclick = "restart()"> Restart </button>
+		<button id="GCF" onclick = "findGCF()">Find GCF</button>
+		<div id="testing">
+		</div>
+	</div>
 </div>
 
 <div id="Static" class="tabcontent">
@@ -81,7 +89,9 @@
 </footer> 
 </div>
 </div> 
-
+	<script src="java\MATJava.js"></script>
+	<script src="java\MathJava.js"></script>
+	<script src="java\4Fractions\4-05-Reducing.js"></script>
 
 </body>
 </html>

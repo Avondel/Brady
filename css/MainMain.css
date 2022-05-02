@@ -1,4 +1,5 @@
 <style>
+
 	body {
 			background-color: aliceblue;
 			font-family: roboto, garamond, arial, sans-serif;
@@ -8,7 +9,7 @@
 		}
 		
 	body.math{
-			background-color: lavenderblush;
+		background-color: lavenderblush;
 	}
 	
 	body.home{
@@ -31,32 +32,16 @@
 		background-color: lavender;
 	}
 	
-	//table2, th, td{
-	//	 border: 1px solid black;
-//		 padding: 5px;
-//	}
-	
-//	th{
-//		background-color: grey;
-//	}
-	
-//	table.wordtable{
-//		background-color: darkSeaGreen;
-//	}
-//	table.generaltable{
-//		background-color: beige;
-//	}
-		
-		
+			
 	img {
 		padding-top: 20px;
 	}
 	
-//	div {
-//		margin-left:25%;
-//		padding:1px 16px;
-//	}
-
+	#page-container{
+		margin-left:25%;
+		padding:1px 16px;
+	}
+	
 	div.collapsable{
 		//margin: auto;
 		text-align: left;
@@ -95,13 +80,8 @@
 
 	ul.nav li a:hover:not(.active) {
 	  background-color: SteelBlue;
-	  width: 70%
+	  width: 70%;
 	  color: white;
-	}
-	
-	#page-container2 {
-	  position: relative;
-	  min-height: 100vh;
 	}
 	
 	.ExtraTopics{
@@ -120,7 +100,7 @@
 
 	.main {
 		width: 90%;
-		margin: auto;
+		//margin: auto;
 	}
 	
 	.submit{

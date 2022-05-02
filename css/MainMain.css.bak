@@ -1,4 +1,4 @@
-<style>	
+<style>
 
 	body {
 			background-color: aliceblue;
@@ -9,7 +9,7 @@
 		}
 		
 	body.math{
-			background-color: lavenderblush;
+		background-color: lavenderblush;
 	}
 	
 	body.home{
@@ -32,32 +32,11 @@
 		background-color: lavender;
 	}
 	
-	table2, th, td{
-		 border: 1px solid black;
-		 padding: 5px;
-	}
-	
-	th{
-		background-color: grey;
-	}
-	
-	table.chemistrytable{
-		background-color: darkSeaGreen;
-	}
-	table.computertable{
-		background-color: beige;
-	}
-		
-		
+			
 	img {
 		padding-top: 20px;
 	}
 	
-	#page-container{
-		margin-left:25%;
-		padding:1px 16px;
-	}
-
 	div.collapsable{
 		//margin: auto;
 		text-align: left;
@@ -96,13 +75,8 @@
 
 	ul.nav li a:hover:not(.active) {
 	  background-color: SteelBlue;
-	  width: 70%
+	  width: 70%;
 	  color: white;
-	}
-	
-	#page-container2 {
-	  position: relative;
-	  min-height: 100vh;
 	}
 	
 	.ExtraTopics{
@@ -121,13 +95,12 @@
 
 	.main {
 		width: 90%;
-		margin: auto;
+		//margin: auto;
 	}
 	
 	.submit{
 		width: 10em;
 		height: 4em;
 	}
-
 
 </style>

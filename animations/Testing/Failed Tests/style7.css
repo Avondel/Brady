@@ -1,0 +1,85 @@
+div.slideIn { 
+      position: absolute; 
+      top: 200px; 
+      width: 100px; 
+      height: 100px; 
+      border: 1px solid black; 
+      animation-name: hide, slideIn;
+      animation-duration: 5s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: 1; 
+      -moz-animation-name: hide, slideIn;
+      -moz-animation-duration: 5s;
+      -moz-animation-timing-function: ease-in;
+      -moz-animation-iteration-count: 1; 
+      -webkit-animation-name: hide, slideIn;
+      -webkit-animation-duration: 5s;
+      -webkit-animation-timing-function: ease-in;
+      -webkit-animation-iteration-count: 1; 
+      -o-animation-name: hide, slideIn;
+      -o-animation-duration: 5s;
+      -o-animation-timing-function: ease-in;
+      -o-animation-iteration-count: 1; 
+      opacity: 1;
+  } 
+  div.slideIn.first {
+      left: 50px; 
+      animation-delay: 0s, 0s;
+      -moz-animation-delay: 0s, 0s;
+      -webkit-animation-delay: 0s, 0s;
+      -o-animation-delay: 0s, 0s;
+  }
+  div.slideIn.second {
+      left: 150px;
+      animation-delay: 0s, 2s;
+      -moz-animation-delay: 0s, 2s;
+      -webkit-animation-delay: 0s, 2s;
+      -o-animation-delay: 0s, 2s;
+  }
+  div.slideIn.third {
+      left: 250px;
+      animation-delay: 0s, 4s;
+      -moz-animation-delay: 0s, 4s;
+      -webkit-animation-delay: 0s, 4s;
+      -o-animation-delay: 0s, 4s;
+  }
+  @keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @-moz-keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @-webkit-keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @-o-keyframes hide
+  { 
+      from { opacity: 0; } to { opacity: 0 }
+  }
+  @keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } 
+  @-moz-keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } 
+  @-webkit-keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } 
+  @-o-keyframes slideIn
+  { 
+        0% { opacity: 0; top: -100px; }
+        1% { opacity: 1; top: -100px; }
+      100% { opacity: 1; top:  200px; } 
+  } 

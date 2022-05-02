@@ -1,0 +1,48 @@
+<html>
+<head>
+	<!--<a href='https://www.freepik.com/vectors/beaker'>Beaker vector created by upklyak - www.freepik.com</a></!-->
+	<title>Chemistry</title>
+	<style>
+		#image {
+  height: 300px;
+  width: 175px;
+  background: url(flaskSmall.jpg) 0px 0px;
+}
+	</style>
+<script>
+	var tID; //we will use this variable to clear the setInterval()
+	var position;
+	
+	function animateScript() {
+
+	position = 168; //start position for the image slicer
+	const  interval = 500; //100 ms of interval for the setInterval()
+	tID = setInterval ( draw, interval);
+	}
+	//tID = setInterval ( () => {
+//we use the ES6 template literal to insert the variable "position"
+	//if (position < 1536)
+	//	{ position = position + 167;}
+//we increment the position by 256 each time
+//	else
+	//	{ position = 167; }
+//reset the position to 256px, once position exceeds 1536px}
+//	, interval ); //end of setInterval
+	//} //end of animateScript()
+	
+	function draw(){
+		document.getElementById("image").style.backgroundPosition = `-${position}px 0px`; 
+		if (position < 668)
+			position = position + 167;
+		else
+			position = 0;
+	}
+
+</script>
+</head>
+<body>
+	<div id="demo">
+  <p id="image" onmouseover = "animateScript()"> </p>
+</div>
+</body>
+</html>

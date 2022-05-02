@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Javascript Animation Demo: Animation Sequence and Simultaneous Animation</title>
+<style type="text/css">
+
+.example-box {
+ position:absolute;
+ left:0px;
+ top:0px;
+ width:3em;
+ background:#99ccff;
+ text-align:center;
+ font-family:"Helvetica neue",helvetica,tahoma,verdana,arial,sans-serif;
+ font-size:1.5em;
+ line-height:100%;
+ color:#fff;
+ cursor:pointer;
+}
+
+</style>
+<script type="text/javascript" src="animator.js"></script>
+<script type="text/javascript">
+
+// some demo tings
+
+function animationDemo() {
+
+	// sequence collection
+	var animations = [];
+	var animationCount = 0;
+
+	function nextAnimation() {
+	  if (animations[animationCount]) {
+		alert("In next animation");
+	    //writeDebug('starting animation '+animationCount);
+	    animations[animationCount].start();
+	    animationCount++;
+	  }
+	}
+
+	// generic tween functions
+
+	function animateBoxX(value) {
+	  document.getElementById('box').style.left = value+'px';
+	}
+
+	function animateBoxH(value) {
+	  document.getElementById('box').style.height = value+'px';
+	}
+
+	// create a sequence of animations
+
+	animations.push(new Animation({
+	  from: 0,
+	  to: 200,
+	  ontween: animateBoxX,
+	  oncomplete: nextAnimation
+	}));
+
+	animations.push(new Animation({
+	  from: parseInt(document.getElementById('box').offsetHeight),
+	  to: 300,
+	  ontween: animateBoxH,
+	  oncomplete: nextAnimation
+	}));
+
+	animations.push(new Animation({
+	  from: 200,
+	  to: 400,
+	  ontween: animateBoxX,
+	  oncomplete: function() {
+	    // run last two animations simultaneously
+	    nextAnimation();
+	    nextAnimation();
+	  }
+	}));
+
+	// simultaneous #1
+	animations.push(new Animation({
+	  from: 400,
+	  to: 800,
+	  ontween: animateBoxX
+	}));
+
+	// simultaneous #2
+	animations.push(new Animation({
+	  from: 300,
+	  to: 600,
+	  ontween: animateBoxH
+	}));
+
+	nextAnimation(); // start the sequence
+
+}
+
+function redoAnimationDemo() {
+	var o = document.getElementById('box');
+	o.style.left = '0px';
+	o.style.height = 'auto';
+	animationDemo();
+}
+
+window.onload = function() {
+	animationDemo();
+}
+
+</script>
+</head>
+
+<body>
+
+	<div>
+
+	 <h1>Javascript animation demo</h1>
+	 <h2>View source for details</h2>
+
+	 <div id="box" class="example-box" onclick="redoAnimationDemo()"><b>#box</b></div>
+
+	</div>
+
+</body>
+</html>

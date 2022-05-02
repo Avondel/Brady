@@ -29,8 +29,8 @@
 	}
 		
 		
-	#page-container {
-		margin-left:25%;
+	.page-container {
+		margin-left:50%;
 		padding:1px 16px;
 	}
 
