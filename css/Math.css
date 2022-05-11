@@ -1,0 +1,115 @@
+	body.math{
+			background-color: lavenderblush;
+	}
+	
+	
+/* Change background color of buttons on hover */
+.mathTabBar button:hover {
+  border-bottom: 40px solid #cc9090;
+}
+
+/* Create an active/current tablink class */
+.mathTabBar button:active {
+	border-bottom: 40px solid #ddaaaa;
+  
+}
+
+.mathTabBar2 selected {
+	border-bottom: 40px solid #eebbbb;
+	border: 40px solid yellow;
+}
+
+/* Style the tab content */
+
+
+.outer {
+  overflow: hidden;
+  background-color: inherit;
+  margin: auto;
+  //position: static;
+}
+.cornered {
+   width: 186px;
+   height: 0px;
+	background-color: inherit;
+   border:none;
+   border-bottom: 25px solid #bb8080;
+   border-left: 40px solid transparent;
+	border-right: 20px solid transparent;
+	border-radius: 50px;
+}
+
+.tabcontent {
+  display: none;
+ // position: block;
+  padding: 6px 12px;
+}
+
+.animation{
+	height: 400px;
+	width: 800px;
+	top: 50px;
+	background-color: cornsilk;
+	//position: absolute;
+}
+
+.numbers{
+	font-size: 30px;
+	position: absolute;
+}
+
+.frac{
+	position: absolute;
+}
+
+.fracLine{
+	//font-size: 50px;
+	position: absolute;
+	background-color: black;
+	border: 3px solid black;
+	width: 30px;	
+}
+
+.crossOut{
+	position: absolute;
+	border: 1px solid black;
+	width: 30px;
+	transform: rotate(-60deg);
+}
+
+.inst{
+	background-color: #FEFCFF;
+	border: 3px solid #F8B88B;
+	padding: 5px;
+	border-radius: 20%;
+	width: 200px;
+	//top: 105px;
+	left: 250px;
+	text-align: center;	
+	position: absolute;
+}
+
+.first{
+	top: 105px;
+}
+
+.second{
+	top: 120px;
+}
+
+.symbol{
+	font-size: 30px;
+	position: absolute;
+}
+
+#testing1{
+	position: absolute;
+}
+
+#testing2{
+	position: absolute;
+}
+
+#testing3{
+	position: absolute;
+}

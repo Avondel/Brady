@@ -1,0 +1,102 @@
+	body {
+			background-color: aliceblue;
+			font-family: roboto, garamond, arial, sans-serif;
+			color: black;
+			font-size: 14pt;
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		
+	.main {
+     flex-grow: 1;
+    }    
+	
+	footer {
+	 margin-left: 17%;
+	 padding-left: 35px;
+    }
+		
+	body.math{
+		background-color: lavenderblush;
+	}
+	
+	body.home{
+		background-color: aliceblue;
+	}
+	
+	body.computers{
+		background-color: ivory;
+	}
+	
+	body.chemistry{
+		background-color: honeydew;
+	}
+	
+	body.logic{
+		background-color: mistyrose;
+	}
+	
+	body.about{
+		background-color: lavender;
+	}
+	
+			
+	img {
+		padding-top: 20px;
+	}
+	
+	#page-container{
+		margin-left:20%;
+		padding:1px 16px;
+		//flex-grow: 1;
+	}
+		
+	div.collapsable3{
+		//margin: auto;
+		text-align: left;
+		
+	}
+	
+	ul.nav {
+		list-style-type: none;
+		margin: 0;
+		width: 15%;
+		background-color: lightblue;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+	}
+
+	ul.nav li a {
+	  display: block;
+	  color: black;
+	  padding: 8px 16px;
+	  text-decoration: none;
+	  width: 70%;
+	}
+
+	ul.nav li a.active {
+	  background-color: DarkSlateBlue;
+	  width: 70%;
+	  color: white;
+	}
+
+	ul.nav li a:hover:not(.active) {
+	  background-color: SteelBlue;
+	  width: 70%;
+	  color: white;
+	}
+
+	
+	.ExtraTopics{
+		border-color: green;
+		border-style: inset;
+		border-width: 3px;
+		padding: 7px;
+		position: absolute;
+		top: 25%;
+		left: 75%; 	
+	}
